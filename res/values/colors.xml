@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="solid_white">#ffffffff</color>
+    <color name="solid_black">#ff000000</color>
+    <color name="solid_gray">#d8d8d8</color>
+    <color name="solid_mid_gray">#b8b8b8</color>
+    <color name="solid_heavy_gray">#989898</color>
+    <color name="solid_red">#ff0000</color>
+    <color name="solid_dark_gray">#555555</color>
+
+    <drawable name="transparent">#0000</drawable>
+    <drawable name="black">#000000</drawable>
+    <drawable name="blue">#0000ff</drawable>
+    <drawable name="half_transparent">#4000</drawable>
+
+    <color name="gray">#525252</color>
+    <color name="red">#940505</color>
+    <color name="gold">#ffc892</color>
+</resources>
