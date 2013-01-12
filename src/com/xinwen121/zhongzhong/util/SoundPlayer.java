@@ -1,8 +1,6 @@
-package com.joyeon.smartmenu.util;
+package com.xinwen121.zhongzhong.util;
 
 import java.util.HashMap;
-
-import com.joyeon.smartmenu.R;
 
 import android.content.Context;
 import android.media.AudioManager;
@@ -34,10 +32,10 @@ public class SoundPlayer {
 		soundPoolMap = new HashMap<Integer, Integer>();
 		AudioManager mgr = (AudioManager) context.getSystemService(Context.AUDIO_SERVICE);
 		streamVolume = mgr.getStreamVolume(AudioManager.STREAM_MUSIC);
-		soundPoolMap.put(1, soundPool.load(context, R.raw.btn_click, 1));
-		soundPoolMap.put(3, soundPool.load(context, R.raw.money, 1));
-		soundPoolMap.put(6, soundPool.load(context, R.raw.popupwindow, 1));
-		soundPoolMap.put(7, soundPool.load(context, R.raw.warning, 1));
+//		soundPoolMap.put(1, soundPool.load(context, R.raw.btn_click, 1));
+//		soundPoolMap.put(3, soundPool.load(context, R.raw.money, 1));
+//		soundPoolMap.put(6, soundPool.load(context, R.raw.popupwindow, 1));
+//		soundPoolMap.put(7, soundPool.load(context, R.raw.warning, 1));
 	}
 
 	public void play(int sound, int uLoop) {

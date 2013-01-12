@@ -1,4 +1,4 @@
-package com.joyeon.smartmenu.util;
+package com.xinwen121.zhongzhong.util;
 
 import java.util.concurrent.SynchronousQueue;
 
@@ -8,14 +8,11 @@ import android.os.Looper;
 import android.support.v4.util.LruCache;
 import android.util.Log;
 
-import com.joyeon.smartmenu.R;
-import com.joyeon.smartmenu.dao.AppManage;
-
 public class AsynImageLoad2 {
 
 	public static AsynImageLoad2 asynImageLoad2 = null;
 
-	public static final int pic = R.drawable.bg_default_pic_small;
+	//public static final int pic = R.drawable.bg_default_pic_small;
 
 	private final static int cacheSize = 1024 * 1024 * 100;
 
@@ -84,8 +81,7 @@ public class AsynImageLoad2 {
 					if (null != item) {
 
 						Log.d(TAG, Thread.currentThread().getName());
-						final Bitmap bitmap = loadImageFromUrl(item.imageUr,
-								AppManage.foodPages.get(item.page).style);
+						final Bitmap bitmap = loadImageFromUrl(item.imageUr);
 
 						mMainHandler.post(new Runnable() {
 							public void run() {
@@ -170,42 +166,17 @@ public class AsynImageLoad2 {
 		return null;
 	}
 
-	protected Bitmap loadImageFromUrl(String imageUrl, int style) {
+	protected Bitmap loadImageFromUrl(String imageUrl) {
+		Bitmap bitmap = null;
+		
 		try {
-			if (style == 91)
-				return BitmapUtil.decodeBitmapByPath(imageUrl, DensityUtil.dip2px(210), DensityUtil.dip2px(157), 0,
-						style);
-			else if (style == 92)
-				return BitmapUtil.decodeBitmapByPath(imageUrl, DensityUtil.dip2px(93), DensityUtil.dip2px(258), 1,
-						style);
-			else if (style == 71)
-				return BitmapUtil.decodeBitmapByPath(imageUrl, DensityUtil.dip2px(454), DensityUtil.dip2px(249), 1,
-						style);
-			else if (style == 61)
-				return BitmapUtil.decodeBitmapByPath(imageUrl, DensityUtil.dip2px(207), DensityUtil.dip2px(308), 1,
-						style);
-			else if (style == 41)
-				return BitmapUtil.decodeBitmapByPath(imageUrl, DensityUtil.dip2px(328), DensityUtil.dip2px(300), 1,
-						style);
-			else if (style == 31)
-				return BitmapUtil.decodeBitmapByPath(imageUrl, DensityUtil.dip2px(454), DensityUtil.dip2px(249), 1,
-						style);
-			else if (style == 21)
-				return BitmapUtil.decodeBitmapByPath(imageUrl, DensityUtil.dip2px(517), (386), 1,
-						style);
-			else if (style == 11)
-				return BitmapUtil.decodeBitmapByPath(imageUrl, DensityUtil.dip2px(678), DensityUtil.dip2px(814), 1,
-						style);
-			else if (style == 1000)
-				return BitmapUtil.decodeBitmapByPath(imageUrl, DensityUtil.dip2px(678), DensityUtil.dip2px(850), 1,
-						style);
-			else
-				return BitmapUtil.decodeBitmapByPath(imageUrl, DensityUtil.dip2px(210), DensityUtil.dip2px(157), 0,
-						style);
+			
+			//return BitmapUtil.decodeBitmapByPath(imageUrl, DensityUtil.dip2px(210), DensityUtil.dip2px(157), 0);
 		} catch (Exception e) {
 			return null;
 		}
 
+		return bitmap;
 	}
 
 	public interface ImageCallback {

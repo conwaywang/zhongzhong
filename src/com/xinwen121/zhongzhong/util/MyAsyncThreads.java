@@ -1,6 +1,6 @@
-package com.joyeon.smartmenu.util;
+package com.xinwen121.zhongzhong.util;
 
-import com.joyeon.smartmenu.R;
+
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.os.Handler;
@@ -44,19 +44,24 @@ public class MyAsyncThreads {
 	}
 
 	protected Bitmap loadImageFromUrl(String imageUrl , int style) {
+		Bitmap bitmap = null;
+		
 		try {
-			return BitmapUtil.decodeBitmapByPath(imageUrl, DensityUtil.dip2px(648) , DensityUtil.dip2px(696) , 1 , style);
+			//bitmap = BitmapUtil.decodeBitmapByPath(imageUrl, DensityUtil.dip2px(648) , DensityUtil.dip2px(696) , 1 , style);
 		} catch (Exception e) {
 			return null;
 		}
+		
+		return bitmap;
 	}
 
 	protected void imageLoaded(Bitmap bitmap, ImageView iv) {
 		if (bitmap != null) {
 //			iv.setBackgroundColor(Color.TRANSPARENT);
 			iv.setImageBitmap(bitmap);
-		} else
-			iv.setImageResource(R.drawable.bg_default_pic_big);
+		} else{
+			//iv.setImageResource(R.drawable.bg_default_pic_big);
+		}
 	}
 
 }

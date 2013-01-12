@@ -1,4 +1,6 @@
-package com.joyeon.smartmenu.util;
+package com.xinwen121.zhongzhong.util;
+
+
 
 import android.app.Activity;
 import android.content.Intent;

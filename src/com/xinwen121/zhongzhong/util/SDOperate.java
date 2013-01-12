@@ -1,9 +1,11 @@
-package com.joyeon.smartmenu.util;
+package com.xinwen121.zhongzhong.util;
 
 import java.io.File;
 import java.io.FileOutputStream;
 
-import com.joyeon.smartmenu.Config;
+import com.xinwen121.zhongzhong.config.Config;
+
+
 
 public class SDOperate {
 	

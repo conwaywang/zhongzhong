@@ -1,11 +1,12 @@
-package com.joyeon.smartmenu.util;
+package com.xinwen121.zhongzhong.util;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import com.joyeon.smartmenu.Config;
+
+import com.xinwen121.zhongzhong.config.Config;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;

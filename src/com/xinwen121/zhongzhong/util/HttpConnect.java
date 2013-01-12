@@ -1,4 +1,4 @@
-package com.joyeon.smartmenu.util;
+package com.xinwen121.zhongzhong.util;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -19,7 +19,9 @@ import org.apache.http.params.CoreConnectionPNames;
 import org.apache.http.params.HttpParams;
 import org.apache.http.protocol.HTTP;
 
-import com.joyeon.smartmenu.exception.ServerResponseException;
+import com.xinwen121.zhongzhong.exception.ServerResponseException;
+
+
 
 public class HttpConnect {
 
