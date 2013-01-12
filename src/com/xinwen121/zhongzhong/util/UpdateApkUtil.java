@@ -15,8 +15,8 @@ import android.os.Handler;
 import android.os.Message;
 
 import com.alibaba.fastjson.JSON;
-import com.joyeon.smartmenu.exception.ApkEmptyException;
 import com.xinwen121.zhongzhong.config.Config;
+import com.xinwen121.zhongzhong.exception.ApkEmptyException;
 import com.xinwen121.zhongzhong.exception.ServerResponseException;
 
 
@@ -58,7 +58,7 @@ public class UpdateApkUtil {
 	public void checkVersion(Handler handler) {
 		this.handler = handler;
 		asyncExecuter = AsyncExecuter.getInstance();
-		asyncExecuter.execute(new checkVersion());
+//		asyncExecuter.execute(new checkVersion());
 	}
 
 	private class UpdateApk implements Runnable {
