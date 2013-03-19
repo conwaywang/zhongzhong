@@ -1,4 +1,4 @@
-package com.xinwen121.zhongzhong.util;
+package com.fumuquan.util;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -15,9 +15,8 @@ import android.os.Handler;
 import android.os.Message;
 
 import com.alibaba.fastjson.JSON;
-import com.xinwen121.zhongzhong.config.Config;
-import com.xinwen121.zhongzhong.exception.ApkEmptyException;
-import com.xinwen121.zhongzhong.exception.ServerResponseException;
+import com.fumuquan.exception.ApkEmptyException;
+import com.fumuquan.exception.ServerResponseException;
 
 
 public class UpdateApkUtil {

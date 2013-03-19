@@ -1,5 +1,4 @@
-package com.xinwen121.zhongzhong.util;
-
+package com.fumuquan.util;
 
 
 import net.sourceforge.pinyin4j.PinyinHelper;

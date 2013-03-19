@@ -1,4 +1,4 @@
-package com.xinwen121.zhongzhong.exception;
+package com.fumuquan.exception;
 
 
 

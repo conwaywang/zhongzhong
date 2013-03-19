@@ -1,4 +1,4 @@
-package com.xinwen121.zhongzhong.util;
+package com.fumuquan.util;
 
 import android.app.ProgressDialog;
 import android.content.Context;

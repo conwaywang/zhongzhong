@@ -1,4 +1,4 @@
-package com.xinwen121.zhongzhong.exception;
+package com.fumuquan.exception;
 
 public class DataNotFitException extends Exception{
 	private static final long serialVersionUID = 4514448644015786982L;

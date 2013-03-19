@@ -1,5 +1,4 @@
-package com.xinwen121.zhongzhong.util;
-
+package com.fumuquan.util;
 
 import android.graphics.Bitmap;
 import android.graphics.Color;

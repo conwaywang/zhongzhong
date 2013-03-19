@@ -1,9 +1,7 @@
-package com.xinwen121.zhongzhong.util;
+package com.fumuquan.util;
+
 
 import android.content.Context;
-
-
-
 
 public class DensityUtil {
 

@@ -2,6 +2,15 @@
 <resources>
 
     <string name="app_name">众众</string>
+    
+    <!-- 页面下面的按钮显示名称 -->
+    <string name="news">新闻</string>
+    <string name="inbox">来稿</string>
+    <string name="main_page">主页</string>
+    <string name="more">更多</string>
+    <string name="personal_data">资料</string>
+    <string name="hot_info">热门</string>
+    
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
 

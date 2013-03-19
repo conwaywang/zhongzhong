@@ -1,4 +1,4 @@
-package com.xinwen121.zhongzhong.util;
+package com.fumuquan.util;
 
 
 import java.util.concurrent.ExecutorService;

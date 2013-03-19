@@ -19,7 +19,7 @@
     
     
     <style name="welcomeActivityBackground" parent="android:Theme">
-        <item name="android:windowBackground">@drawable/bg_welcome</item>
+        <item name="android:windowBackground">@drawable/welcome</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:focusableInTouchMode">true</item>
     </style>
