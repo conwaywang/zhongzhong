@@ -22,5 +22,5 @@ public abstract class BaseActivity extends Activity {
 	/**
 	 * 刷新当前页面
 	 */
-	protected abstract void refresh(); 
+	//protected abstract void refresh(); 
 }

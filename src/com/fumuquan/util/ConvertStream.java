@@ -1,13 +1,11 @@
-package com.joyeon.ppevaluate.util;
+package com.fumuquan.util;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-import com.joyeon.ppevaluate.exception.OperateStreamException;
-
-
+import com.fumuquan.exception.OperateStreamException;
 
 public class ConvertStream {
 	

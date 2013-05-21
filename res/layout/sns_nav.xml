@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/sns_nav_item_bg_color">
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/sns_nav_item_bg_selector">
+    	<Button
+        	android:id="@+id/btn_tweet"
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:paddingLeft="20dp"
+        	android:gravity="center_vertical|left"
+        	android:text="动态"
+        	android:textSize="@dimen/text_size_14"
+        	android:textColor="@color/sns_nav_font_color_selector"
+        	android:background="@drawable/transparent"/>
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/sns_nav_divider_line_color"/>
+    
+   <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/sns_nav_item_bg_selector">
+    	<Button
+        	android:id="@+id/btn_help"
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:paddingLeft="20dp"
+        	android:gravity="center_vertical|left"
+        	android:text="互帮"
+        	android:textSize="@dimen/text_size_14"
+        	android:textColor="@color/sns_nav_font_color_selector"
+        	android:background="@drawable/transparent"/>
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/sns_nav_divider_line_color"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/sns_nav_item_bg_selector">
+    	<Button
+        	android:id="@+id/btn_activity"
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:paddingLeft="20dp"
+        	android:gravity="center_vertical|left"
+        	android:text="活动"
+        	android:textSize="@dimen/text_size_14"
+        	android:textColor="@color/sns_nav_font_color_selector"
+        	android:background="@drawable/transparent"/>
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/sns_nav_divider_line_color"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/sns_nav_item_bg_selector">
+    	<Button
+        	android:id="@+id/btn_personal_page"
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:paddingLeft="20dp"
+        	android:gravity="center_vertical|left"
+        	android:text="主页"
+        	android:textSize="@dimen/text_size_14"
+        	android:textColor="@color/sns_nav_font_color_selector"
+        	android:background="@drawable/transparent"/>
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/sns_nav_divider_line_color"/>
+    
+</LinearLayout>

@@ -25,11 +25,11 @@ public class BitmapUtil {
 		asyncExecuter = AsyncExecuter.getInstance();
 
 		StringBuilder sb = new StringBuilder();
-		sb.append(Config.sAppCatchPath).append(imageFile);
+		sb.append(Config.getInstance().sAppCatchPath).append(imageFile);
 		File pic = new File(sb.toString());
 		if (!pic.exists()) {
 			StringBuilder sb2 = new StringBuilder();
-			sb2.append(Config.sAppDataPath).append(imageFile);
+			sb2.append(Config.getInstance().sAppDataPath).append(imageFile);
 			File pic2 = new File(sb2.toString());
 			pic2 = new File(sb2.toString());
 			if (!pic2.exists())
@@ -91,7 +91,7 @@ public class BitmapUtil {
 			@Override
 			public void run() {
 				StringBuilder sb = new StringBuilder();
-				sb.append(Config.sAppCatchPath);
+				sb.append(Config.getInstance().sAppCatchPath);
 				File dir = new File(sb.toString());
 				if (!dir.exists()) {
 					dir.mkdirs();

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="listitem_nick">12sp</dimen>
+    <dimen name="listitem_timestamp">10sp</dimen>
+    <dimen name="listitem_text">12sp</dimen>
+    <dimen name="listitem_bottom">10sp</dimen>
+    
+    
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_10">10sp</dimen>
+</resources>

@@ -17,25 +17,8 @@ public class LogUtil {
 	private static final int ERROR = 4;		//
 	private static int curLogLevel = INFO;	//大于等于该级别的才会被输出到文件
 	
-	
-	public static void dumpCrashLog(String path, String log) {
-		try {
-			File rootDir = new File(Config.sAppLogPath);
-			if (!rootDir.exists()) {
-				rootDir.mkdirs();
-			}
-	        File file = new File(path);  
-	        FileOutputStream outStream = new FileOutputStream(file);  
-	        outStream.write(log.getBytes());  
-	        outStream.close();  
-			
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
 
-	public static void dumpCrashLog(String path, Throwable error) {
+	public static void dumpCrashLog(Throwable error) {
 		StringBuilder build = new StringBuilder();
 		
 		build.append("------------------------------------\n");
@@ -58,7 +41,7 @@ public class LogUtil {
 			}
 		}
 
-		dumpCrashLog(path, build.toString());
+		write2File(build.toString());
 	}
 	
 	public static void i(String tag, String msg) {
@@ -98,12 +81,12 @@ public class LogUtil {
 		String timeInfo = DateUtil.fomatToHHMMSS(date);
 		
 		// 创建log文件
-		File logPathFile = new File(Config.sAppLogPath);
+		File logPathFile = new File(Config.getInstance().sAppLogPath);
 		if (!logPathFile.exists()) {
 			logPathFile.mkdirs();
 		}
 
-		File logFile = new File(Config.sAppLogPath + dateInfo + ".txt");
+		File logFile = new File(Config.getInstance().sAppLogPath + dateInfo + ".txt");
 		
 		PrintWriter pw;
 		try {

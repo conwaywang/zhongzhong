@@ -15,6 +15,7 @@ import android.os.Handler;
 import android.os.Message;
 
 import com.alibaba.fastjson.JSON;
+import com.fumuquan.config.Config;
 import com.fumuquan.exception.ApkEmptyException;
 import com.fumuquan.exception.ServerResponseException;
 
@@ -79,11 +80,11 @@ public class UpdateApkUtil {
 	private void updateAPK() throws ClientProtocolException, IOException,
 			ServerResponseException, ApkEmptyException {
 		HttpConnect httpConnect = HttpConnect.getInstance();
-		File rootDir = new File(Config.sMenuFolderPath);
+		File rootDir = new File(Config.getInstance().sAppDataPath);
 		if (!rootDir.exists()) {
 			rootDir.mkdirs();
 		}
-		File file = new File(Config.APK_PATH);
+		File file = new File(Config.getInstance().sApkPath);
 		if (file.exists())
 			file.delete();
 		HttpEntity entity = httpConnect.getFile(Config.URL_UPDATE_APK);
@@ -123,7 +124,7 @@ public class UpdateApkUtil {
 	}
 
 	public void install(Context context) {
-		File file = new File(Config.APK_PATH);
+		File file = new File(Config.getInstance().sApkPath);
 		Intent install = new Intent();
 		install.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		install.setAction(android.content.Intent.ACTION_VIEW);

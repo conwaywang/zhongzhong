@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:background="@drawable/bg_listitem_selector">
+    
+    <LinearLayout 
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="0">
+        
+        <ImageView 
+            android:id="@+id/iv_head_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitCenter"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="4dp"
+        android:orientation="vertical">
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="32dp">
+            
+            <TextView 
+	            android:id="@+id/tv_nick"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:layout_alignParentLeft="true"
+	            android:text="测试"
+	            android:textColor="@color/listitem_name_selector"
+	            android:textSize="@dimen/listitem_nick"/>
+        
+	        <TextView 
+	            android:id="@+id/tv_timestamp"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:layout_alignParentRight="true"
+	            android:text="1小时前"
+	            android:textColor="@color/listitem_timestamp_selector"
+	            android:textSize="@dimen/listitem_timestamp"/>
+        </RelativeLayout>
+        
+        
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="这只不过是一个测试数据，你不用当真"
+            android:textColor="@color/listitem_text_normal"
+            android:textSize="@dimen/listitem_text" />
+        
+        <ImageView 
+            android:id="@+id/iv_image"
+            android:layout_width="124dp"
+            android:layout_height="124dp"
+            android:background="@drawable/tweet_item_pic_default_read_failure"
+            android:scaleType="fitCenter"
+            android:visibility="gone"/>
+        
+        <RelativeLayout
+            android:id="@+id/ll_original"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:paddingTop="5dp"
+            android:paddingRight="2dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/tweet_bg_original_selector">
+	        
+            <ImageView 
+                android:id="@+id/iv_ori_head_icon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:scaleType="fitCenter"/>
+            <TextView 
+                android:id="@+id/tv_ori_nick"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_ori_head_icon"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="小鱼儿"
+                android:textColor="@color/listitem_name_selector"
+                android:textSize="@dimen/listitem_nick"/>
+            
+            <TextView 
+                android:id="@+id/tv_ori_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_ori_head_icon"
+                android:text="这是原始内容的测试，有没有啊 ，有没有"
+                android:textColor="@color/listitem_text_content_selector"
+                android:textSize="@dimen/listitem_text"/>
+            
+            <ImageView 
+                android:id="@+id/iv_ori_image"
+                android:layout_width="124dp"
+                android:layout_height="124dp"
+                android:layout_below="@id/tv_ori_content"
+                android:scaleType="fitCenter"
+                android:background="@drawable/tweet_item_pic_default_read_failure"/>
+            
+            <ImageView 
+                android:id="@+id/iv_ori_lbs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_ori_image"
+                android:background="@drawable/tweet_item_lbs"/>
+            <TextView 
+                android:id="@+id/tv_ori_lbs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_ori_lbs"
+                android:layout_below="@id/iv_ori_iamge"
+                android:text="万振逍遥苑"
+                android:textColor="@color/listitem_text_bottom_selector"
+                android:textSize="@dimen/listitem_bottom"/>
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:id="@+id/rl_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical">
+            <ImageView 
+                android:id="@+id/iv_lbs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"/>
+            <TextView 
+                android:id="@+id/tv_lbs"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/iv_lbs"
+                android:text="万振逍遥苑"
+                android:textColor="@color/listitem_text_bottom_selector"
+                android:textSize="@dimen/listitem_bottom"/>
+            <TextView 
+                android:id="@+id/tv_refer_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="9999"
+                android:textColor="@color/listitem_text_bottom2_selector"
+                android:textSize="@dimen/listitem_bottom"/>
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

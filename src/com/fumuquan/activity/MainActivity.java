@@ -1,5 +1,7 @@
 package com.fumuquan.activity;
 
+import com.fumuquan.R;
+
 import android.app.TabActivity;
 import android.os.Bundle;
 import android.widget.RadioGroup;

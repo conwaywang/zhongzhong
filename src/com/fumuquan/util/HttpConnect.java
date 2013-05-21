@@ -93,8 +93,10 @@ public class HttpConnect {
 		response = httpClient.execute(request);
 		if (response.getStatusLine().getStatusCode() == 200)
 			httpEntity = response.getEntity();
-		else
+		else{
+			response.getEntity();
 			throw new ServerResponseException("服务器响应非200");
+		}
 		return httpEntity;
 	}
 }

@@ -15,13 +15,7 @@ public class MyApplication extends Application {
 	private static Thread.UncaughtExceptionHandler mDefaultExceptionHandler = null;
 	private static Thread.UncaughtExceptionHandler mNewExceptionHandler = new Thread.UncaughtExceptionHandler() {
 		public void uncaughtException(Thread thread, Throwable error) {
-			
-			
-			SimpleDateFormat sDateFormat = new SimpleDateFormat(
-					"yyyy年MM月dd日_HH时mm分ss秒");
-			String date = sDateFormat.format(new java.util.Date());
-			LogUtil.dumpCrashLog(Config.sAppLogPath + "/" + date
-					+ ".txt", error);
+			LogUtil.dumpCrashLog( error);
 			
 			System.exit(0);
 		}
